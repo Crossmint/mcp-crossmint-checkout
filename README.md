@@ -97,9 +97,9 @@ Also, the delivery address for the order is hardcoded during set up.
    ```
 
 10. **Run the server**
-   ```bash
-   npm run crossmint-checkout
-   ```
+    ```bash
+    npm run crossmint-checkout
+    ```
 
 ## Use it with Claude
 
