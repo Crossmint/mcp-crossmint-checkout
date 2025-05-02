@@ -25,25 +25,35 @@ const envVars = envContent
     return acc;
   }, {});
 
-// Read the existing config
+// Calculate the path to build/index.js relative to this script
+const buildIndexPath = path.join(__dirname, '../build/index.js');
+
+// Read the existing config or create a new one
 let config;
 try {
   const configContent = fs.readFileSync(configPath, 'utf8');
   config = JSON.parse(configContent);
 } catch (error) {
-  console.error('Error reading config file:', error);
-  process.exit(1);
+  // If file doesn't exist or is invalid JSON, create a new config
+  config = {};
 }
 
-// Completely replace the env object in the config
-if (config.mcpServers && config.mcpServers['crossmint-checkout']) {
-  config.mcpServers['crossmint-checkout'].env = envVars;
+// Ensure mcpServers object exists
+if (!config.mcpServers) {
+  config.mcpServers = {};
 }
+
+// Update or create the crossmint-checkout server configuration
+config.mcpServers['crossmint-checkout'] = {
+  command: 'node',
+  args: [buildIndexPath],
+  env: envVars
+};
 
 // Write the updated config back to the file
 try {
   fs.writeFileSync(configPath, JSON.stringify(config, null, 4));
-  console.log('Successfully updated Claude config with new environment variables');
+  console.log('Successfully updated Claude config with new environment variables and server configuration');
 } catch (error) {
   console.error('Error writing config file:', error);
   process.exit(1);
