@@ -1,6 +1,6 @@
 # Crossmint Checkout MCP Server
 
-Crossmint's Checkout API allows programmatic purchase of physical and virtuals goods and services, 
+Crossmint's Checkout API allows programmatic purchase of physical and virtual goods and services, 
 with programmable money: stablecoins. It enables your AI agent to reliably purchase over 1 billion items, 
 without any cost overhead, nor hassle and unreliability of having to use virtual debit cards and browser
 use to pay in online forms. 
