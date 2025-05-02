@@ -67,11 +67,11 @@ Also, the delivery address for the order is hardcoded during set up.
 
 4. **Obtain API keys**
 
-   - `CROSSMINT_API_KEY`: Get a Crossmint API key for [testing](https://staging.crossmint.com/console/overview) or [production](https://console.crossmint.com):
+   - `CROSSMINT_API_KEY`: Get a [Crossmint API key](https://www.crossmint.com/signin?callbackUrl=/console):
      - Login to Crossmint Console and navigate to Integrate > API Keys > Create new key 
-     - Select scopes: `orders.create`, `orders.read`, `wallets:transactions.create`, `wallets.create`, `wallets.fund`, `wallets.balance:read`
+     - Select scopes: `orders.create`, `orders.read`, `wallets:transactions.create`, `wallets.create`, `wallets.balance:read`. For a staging API key also include `wallets.fund` 
      - Copy API key and paste it in your .env file
-   - `COINBASE_PROJECT_ID`: Create a [Coinbase Developer Account](https://docs.cdp.coinbase.com/), copy your Coinbase Project ID, and paste it in your .env file
+   - `COINBASE_PROJECT_ID`: Create a [Coinbase Developer Account](https://login.coinbase.com/signup), copy your Coinbase Project ID, and paste it in your .env file
 
 5. **Fill in delivery information**
 
