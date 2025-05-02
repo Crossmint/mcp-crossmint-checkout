@@ -7,6 +7,8 @@ use to pay in online forms.
 
 If your agent can obtain an item SKU/identifier, this API can let it buy it. 
 
+![MCP Demo](assets/mcp-demo-gif.gif)
+
 ## Capabilities
 
 This MCP server takes an item identifier (from URL to SKUs) and allows you to execute a purchase of it
