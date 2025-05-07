@@ -16,11 +16,13 @@ const envVars = envContent
   .split('\n')
   .filter(line => line.trim() && !line.startsWith('#'))
   .reduce((acc, line) => {
+    // Split on first '=' and remove any comments
     const [key, ...valueParts] = line.split('=');
     const value = valueParts.join('=').trim();
     if (key && value) {
-      // Remove surrounding quotes if they exist
-      acc[key.trim()] = value.replace(/^["']|["']$/g, '');
+      // Remove surrounding quotes if they exist and any inline comments
+      const cleanValue = value.replace(/^["']|["']$/g, '').split('#')[0].trim();
+      acc[key.trim()] = cleanValue;
     }
     return acc;
   }, {});
