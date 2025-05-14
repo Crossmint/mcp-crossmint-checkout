@@ -1,0 +1,40 @@
+{
+  "name": "crossmint-checkout",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "crossmint-checkout": "./build/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && chmod 755 build/index.js",
+    "crossmint-checkout": "node ./build/index.js",
+    "generate-agent-wallet": "node scripts/generate-agent-wallet.js",
+    "update-claude-config": "node scripts/update-claude-config.js",
+    "transfer-credits": "node scripts/transfer-credits.js $1 $2"
+  },
+  "files": [
+    "build"
+  ],
+  "keywords": [
+    "modelcontextprotocol",
+    "commerce",
+    "crossmint",
+    "checkout"
+  ],
+  "author": "Crossmint",
+  "license": "ISC",
+  "description": "Model Context Protocol server for Crossmint Checkout",
+  "dependencies": {
+    "@coinbase/onchainkit": "^0.38.9",
+    "@modelcontextprotocol/sdk": "^1.10.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.11.1",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  }
+}
