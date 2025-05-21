@@ -65,7 +65,7 @@ Crossmint will securely transfer credits to the company wallet. The company will
 
 4. **Obtain Crossmint API key**
 
-   - Login to [Crossmint Console](https://www.crossmint.com/signin?callbackUrl=/console) and navigate to Integrate > API Keys > Create new key 
+   - Login to [Crossmint Console](https://www.crossmint.com/signin?callbackUrl=/console) and navigate to Integrate > API Keys > Create new server key 
    - Select scopes: `orders.create`, `orders.read`, `wallets:transactions.create`, `wallets.create`, `wallets.read`, `wallets.balance:read`. 
    - Copy API key and paste it in your .env file
 
