@@ -27,10 +27,9 @@
   "license": "ISC",
   "description": "Model Context Protocol server for Crossmint Checkout",
   "dependencies": {
-    "@coinbase/onchainkit": "^0.38.9",
     "@modelcontextprotocol/sdk": "^1.10.0",
     "dotenv": "^16.4.5",
-    "ethers": "^6.11.1",
+    "viem": "^2.30.0",
     "zod": "^3.24.3"
   },
   "devDependencies": {
