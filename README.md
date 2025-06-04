@@ -34,7 +34,9 @@ Coming soon:
 
 ## How are purchases paid
 
-This MCP server is configured to perform purchases with Crossmint credits. However, simply changing the `TOKEN` variable to "usdc" in `src/index.ts` enables purchases with stablecoins.
+This MCP server is configured to perform purchases with Crossmint credits. Please [contact us](support@crossmint.io) if you are interested to learn more. To use USDC instead of credits:
+1. Change  TOKEN variable to "usdc" in src/index.ts
+2. Change the CREDIT_TOKEN_ADDRESS to the USDC address on ethereum `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48`
 
 ### How to get a company treasury wallet
 
