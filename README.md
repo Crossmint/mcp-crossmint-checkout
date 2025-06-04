@@ -36,7 +36,7 @@ Coming soon:
 
 This MCP server is configured to perform purchases with Crossmint credits. Please [contact us](support@crossmint.io) if you are interested to learn more. To use USDC instead of credits:
 1. Change  TOKEN variable to "usdc" in src/index.ts
-2. Change the CREDIT_TOKEN_ADDRESS to the USDC address on ethereum `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48`
+2. Change the CREDIT_TOKEN_ADDRESS to the USDC address on base: `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`
 
 ### How to get a company treasury wallet
 

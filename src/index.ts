@@ -9,7 +9,7 @@ const isProduction = process.env.ENVIRONMENT === 'prod';
 const CROSSMINT_API_BASE = isProduction 
   ? "https://www.crossmint.com/api"
   : "https://staging.crossmint.com/api";
-const CHAIN = isProduction ? 'ethereum' : 'ethereum-sepolia';
+const CHAIN = isProduction ? 'base' : 'base-sepolia';
 const TOKEN = 'credit';
 const USER_AGENT = "crossmint-checkout/1.0";
 

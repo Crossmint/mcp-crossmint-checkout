@@ -4,8 +4,8 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 const isProduction = process.env.ENVIRONMENT === 'prod'
-const CHAIN = isProduction ? 'ethereum' : 'ethereum-sepolia'
-const CREDIT_TOKEN_ADDRESS = '0xe9fFA6956BFfC367B26dD3c256CF0C978603Eaec'
+const CHAIN = isProduction ? 'base' : 'base-sepolia'
+const CREDIT_TOKEN_ADDRESS = '0xe1809a1Ce9495b95EaC7c0Bf90BeeccEbf4063F9' //testnet
 const CROSSMINT_API_BASE = isProduction 
   ? "https://www.crossmint.com/api/2022-06-09"
   : "https://staging.crossmint.com/api/2022-06-09";
