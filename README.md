@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/crossmint-mcp-crossmint-checkout-badge.png)](https://mseep.ai/app/crossmint-mcp-crossmint-checkout)
+
 # Crossmint Checkout MCP Server
 
 Crossmint's Checkout allows programmatic purchase of physical and virtual goods and services, 
