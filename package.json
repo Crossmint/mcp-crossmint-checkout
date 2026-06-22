@@ -4,12 +4,15 @@
   "main": "index.js",
   "type": "module",
   "bin": {
-    "crossmint-checkout": "./build/index.js"
+    "crossmint-checkout": "./build/index.js",
+    "crossmint-basket-viewer": "./build/viewer.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && chmod 755 build/index.js",
+    "build": "tsc && chmod 755 build/index.js build/viewer.js",
     "crossmint-checkout": "node ./build/index.js",
+    "basket-viewer": "node ./build/viewer.js",
+    "dev:basket-viewer": "npm run build && node ./build/viewer.js",
     "generate-agent-wallet": "node scripts/generate-agent-wallet.js",
     "update-claude-config": "node scripts/update-claude-config.js",
     "transfer-credits": "node scripts/transfer-credits.js $1 $2"
@@ -27,10 +30,10 @@
   "license": "ISC",
   "description": "Model Context Protocol server for Crossmint Checkout",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.26.0",
+    "@modelcontextprotocol/sdk": "1.25.0",
     "dotenv": "^16.4.5",
     "viem": "^2.30.0",
-    "zod": "^3.24.3"
+    "zod": "3.25.23"
   },
   "devDependencies": {
     "@types/node": "^22.14.1",

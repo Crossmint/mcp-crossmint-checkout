@@ -1,5 +1,6 @@
 # Dependencies
 node_modules/
+.npm-cache/
 
 # Environment variables
 .env
@@ -14,6 +15,9 @@ build/
 logs
 *.log
 npm-debug.log*
+
+# Local basket state
+.crossmint-agent-basket/
 
 # IDE and editor files
 .idea/
